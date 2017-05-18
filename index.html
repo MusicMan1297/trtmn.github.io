@@ -1,233 +1,19 @@
 <!DOCTYPE html>
-<html amp>
-    <head>
-        <meta charset="utf-8">
-        <script async src="https://cdn.ampproject.org/v0.js"></script>
-        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <style amp-custom>
-        @font-face {
-          font-family: 'fontello';
-          src: url('data:application/octet-stream;base64,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') format('woff'),
-               url('data:application/octet-stream;base64,AAEAAAAPAIAAAwBwR1NVQiCMJXkAAAD8AAAAVE9TLzI+I0l1AAABUAAAAFZjbWFw6Su7swAAAagAAAFwY3Z0IAbV/wQAAAfwAAAAIGZwZ22KkZBZAAAIEAAAC3BnYXNwAAAAEAAAB+gAAAAIZ2x5ZroIKfUAAAMYAAABRGhlYWQNZNs0AAAEXAAAADZoaGVhBz0DUwAABJQAAAAkaG10eAfGAAAAAAS4AAAACGxvY2EAogAAAAAEwAAAAAZtYXhwAMIL5QAABMgAAAAgbmFtZcydHR8AAAToAAACzXBvc3Rnc24FAAAHuAAAAC1wcmVw5UErvAAAE4AAAACGAAEAAAAKADAAPgACbGF0bgAOREZMVAAaAAQAAAAAAAAAAQAAAAQAAAAAAAAAAQAAAAFsaWdhAAgAAAABAAAAAQAEAAQAAAABAAgAAQAGAAAAAQAAAAED4wGQAAUAAAJ6ArwAAACMAnoCvAAAAeAAMQECAAACAAUDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBmRWQAQOgD6AMDUv9qAFoDUgCWAAAAAQAAAAAAAAAAAAUAAAADAAAALAAAAAQAAAFUAAEAAAAAAE4AAwABAAAALAADAAoAAAFUAAQAIgAAAAQABAABAADoA///AADoA///AAAAAQAEAAAAAQAAAQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAHAAAAAAAAAABAADoAwAA6AMAAAABAAIAAP9qA+ADUQA0AFoAMUAuWUdBPS0rKiERDgsLAgEBRx0BAkQAAgECcAAAAAxIAwEBAQwBSTMyGBYRIAQFFisBMjMXFhcWFxYXFhcWNRUUDwEGBwYHBgcGJyYHBgcGByM1NCcmJyYnJi8BNTY1Njc2NzY3MgEwFDM2Mzc2NzYyHwEWPwE2PwEmDwEGBwYnJicmJyYXJiIPAgYB4BEQGTg9nF5AEAIBAwECAQIbb4fAVk4HBGg0AgIBBSAcVxYDAgQBAwoibIW2Bf7VAQIDXy1aAwMDeAQDliNIBAEEGHFcBgQMDhIcLwEEAwSLdQIDUQMDEzN/VWcLER4CHwYDGRAKkmh+CwMWAgM8HQECrAcCGCBgeA4UIh8DBiwmh151Cf2YAQI1GDICA34EBJ8mTAYBAg09MwMFDgwTHTABBQWTfQEAAAEAAAABAAAns9V8Xw889QALA+gAAAAA1S7LygAAAADVLsvKAAD/agPoA1EAAAAIAAIAAAAAAAAAAQAAA1L/agAAA+gAAP/+A+gAAQAAAAAAAAAAAAAAAAAAAAID6AAAA94AAAAAAAAAogAAAAEAAAACAFsAAgAAAAAAAgAIABgAcwAAAEILcAAAAAAAAAASAN4AAQAAAAAAAAA1AAAAAQAAAAAAAQAIADUAAQAAAAAAAgAHAD0AAQAAAAAAAwAIAEQAAQAAAAAABAAIAEwAAQAAAAAABQALAFQAAQAAAAAABgAIAF8AAQAAAAAACgArAGcAAQAAAAAACwATAJIAAwABBAkAAABqAKUAAwABBAkAAQAQAQ8AAwABBAkAAgAOAR8AAwABBAkAAwAQAS0AAwABBAkABAAQAT0AAwABBAkABQAWAU0AAwABBAkABgAQAWMAAwABBAkACgBWAXMAAwABBAkACwAmAclDb3B5cmlnaHQgKEMpIDIwMTcgYnkgb3JpZ2luYWwgYXV0aG9ycyBAIGZvbnRlbGxvLmNvbWZvbnRlbGxvUmVndWxhcmZvbnRlbGxvZm9udGVsbG9WZXJzaW9uIDEuMGZvbnRlbGxvR2VuZXJhdGVkIGJ5IHN2ZzJ0dGYgZnJvbSBGb250ZWxsbyBwcm9qZWN0Lmh0dHA6Ly9mb250ZWxsby5jb20AQwBvAHAAeQByAGkAZwBoAHQAIAAoAEMAKQAgADIAMAAxADcAIABiAHkAIABvAHIAaQBnAGkAbgBhAGwAIABhAHUAdABoAG8AcgBzACAAQAAgAGYAbwBuAHQAZQBsAGwAbwAuAGMAbwBtAGYAbwBuAHQAZQBsAGwAbwBSAGUAZwB1AGwAYQByAGYAbwBuAHQAZQBsAGwAbwBmAG8AbgB0AGUAbABsAG8AVgBlAHIAcwBpAG8AbgAgADEALgAwAGYAbwBuAHQAZQBsAGwAbwBHAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAHMAdgBnADIAdAB0AGYAIABmAHIAbwBtACAARgBvAG4AdABlAGwAbABvACAAcAByAG8AagBlAGMAdAAuAGgAdAB0AHAAOgAvAC8AZgBvAG4AdABlAGwAbABvAC4AYwBvAG0AAAAAAgAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQIBAwADZmJtAAAAAAAAAQAB//8ADwAAAAAAAAAAAAAAAAAAAAAAGAAYABgAGANS/2oDUv9qsAAsILAAVVhFWSAgS7gADlFLsAZTWliwNBuwKFlgZiCKVViwAiVhuQgACABjYyNiGyEhsABZsABDI0SyAAEAQ2BCLbABLLAgYGYtsAIsIGQgsMBQsAQmWrIoAQpDRWNFUltYISMhG4pYILBQUFghsEBZGyCwOFBYIbA4WVkgsQEKQ0VjRWFksChQWCGxAQpDRWNFILAwUFghsDBZGyCwwFBYIGYgiophILAKUFhgGyCwIFBYIbAKYBsgsDZQWCGwNmAbYFlZWRuwAStZWSOwAFBYZVlZLbADLCBFILAEJWFkILAFQ1BYsAUjQrAGI0IbISFZsAFgLbAELCMhIyEgZLEFYkIgsAYjQrEBCkNFY7EBCkOwAWBFY7ADKiEgsAZDIIogirABK7EwBSWwBCZRWGBQG2FSWVgjWSEgsEBTWLABKxshsEBZI7AAUFhlWS2wBSywB0MrsgACAENgQi2wBiywByNCIyCwACNCYbACYmawAWOwAWCwBSotsAcsICBFILALQ2O4BABiILAAUFiwQGBZZrABY2BEsAFgLbAILLIHCwBDRUIqIbIAAQBDYEItsAkssABDI0SyAAEAQ2BCLbAKLCAgRSCwASsjsABDsAQlYCBFiiNhIGQgsCBQWCGwABuwMFBYsCAbsEBZWSOwAFBYZVmwAyUjYUREsAFgLbALLCAgRSCwASsjsABDsAQlYCBFiiNhIGSwJFBYsAAbsEBZI7AAUFhlWbADJSNhRESwAWAtsAwsILAAI0KyCwoDRVghGyMhWSohLbANLLECAkWwZGFELbAOLLABYCAgsAxDSrAAUFggsAwjQlmwDUNKsABSWCCwDSNCWS2wDywgsBBiZrABYyC4BABjiiNhsA5DYCCKYCCwDiNCIy2wECxLVFixBGREWSSwDWUjeC2wESxLUVhLU1ixBGREWRshWSSwE2UjeC2wEiyxAA9DVVixDw9DsAFhQrAPK1mwAEOwAiVCsQwCJUKxDQIlQrABFiMgsAMlUFixAQBDYLAEJUKKiiCKI2GwDiohI7ABYSCKI2GwDiohG7EBAENgsAIlQrACJWGwDiohWbAMQ0ewDUNHYLACYiCwAFBYsEBgWWawAWMgsAtDY7gEAGIgsABQWLBAYFlmsAFjYLEAABMjRLABQ7AAPrIBAQFDYEItsBMsALEAAkVUWLAPI0IgRbALI0KwCiOwAWBCIGCwAWG1EBABAA4AQkKKYLESBiuwcisbIlktsBQssQATKy2wFSyxARMrLbAWLLECEystsBcssQMTKy2wGCyxBBMrLbAZLLEFEystsBossQYTKy2wGyyxBxMrLbAcLLEIEystsB0ssQkTKy2wHiwAsA0rsQACRVRYsA8jQiBFsAsjQrAKI7ABYEIgYLABYbUQEAEADgBCQopgsRIGK7ByKxsiWS2wHyyxAB4rLbAgLLEBHistsCEssQIeKy2wIiyxAx4rLbAjLLEEHistsCQssQUeKy2wJSyxBh4rLbAmLLEHHistsCcssQgeKy2wKCyxCR4rLbApLCA8sAFgLbAqLCBgsBBgIEMjsAFgQ7ACJWGwAWCwKSohLbArLLAqK7AqKi2wLCwgIEcgILALQ2O4BABiILAAUFiwQGBZZrABY2AjYTgjIIpVWCBHICCwC0NjuAQAYiCwAFBYsEBgWWawAWNgI2E4GyFZLbAtLACxAAJFVFiwARawLCqwARUwGyJZLbAuLACwDSuxAAJFVFiwARawLCqwARUwGyJZLbAvLCA1sAFgLbAwLACwAUVjuAQAYiCwAFBYsEBgWWawAWOwASuwC0NjuAQAYiCwAFBYsEBgWWawAWOwASuwABa0AAAAAABEPiM4sS8BFSotsDEsIDwgRyCwC0NjuAQAYiCwAFBYsEBgWWawAWNgsABDYTgtsDIsLhc8LbAzLCA8IEcgsAtDY7gEAGIgsABQWLBAYFlmsAFjYLAAQ2GwAUNjOC2wNCyxAgAWJSAuIEewACNCsAIlSYqKRyNHI2EgWGIbIVmwASNCsjMBARUUKi2wNSywABawBCWwBCVHI0cjYbAJQytlii4jICA8ijgtsDYssAAWsAQlsAQlIC5HI0cjYSCwBCNCsAlDKyCwYFBYILBAUVizAiADIBuzAiYDGllCQiMgsAhDIIojRyNHI2EjRmCwBEOwAmIgsABQWLBAYFlmsAFjYCCwASsgiophILACQ2BkI7ADQ2FkUFiwAkNhG7ADQ2BZsAMlsAJiILAAUFiwQGBZZrABY2EjICCwBCYjRmE4GyOwCENGsAIlsAhDRyNHI2FgILAEQ7ACYiCwAFBYsEBgWWawAWNgIyCwASsjsARDYLABK7AFJWGwBSWwAmIgsABQWLBAYFlmsAFjsAQmYSCwBCVgZCOwAyVgZFBYIRsjIVkjICCwBCYjRmE4WS2wNyywABYgICCwBSYgLkcjRyNhIzw4LbA4LLAAFiCwCCNCICAgRiNHsAErI2E4LbA5LLAAFrADJbACJUcjRyNhsABUWC4gPCMhG7ACJbACJUcjRyNhILAFJbAEJUcjRyNhsAYlsAUlSbACJWG5CAAIAGNjIyBYYhshWWO4BABiILAAUFiwQGBZZrABY2AjLiMgIDyKOCMhWS2wOiywABYgsAhDIC5HI0cjYSBgsCBgZrACYiCwAFBYsEBgWWawAWMjICA8ijgtsDssIyAuRrACJUZSWCA8WS6xKwEUKy2wPCwjIC5GsAIlRlBYIDxZLrErARQrLbA9LCMgLkawAiVGUlggPFkjIC5GsAIlRlBYIDxZLrErARQrLbA+LLA1KyMgLkawAiVGUlggPFkusSsBFCstsD8ssDYriiAgPLAEI0KKOCMgLkawAiVGUlggPFkusSsBFCuwBEMusCsrLbBALLAAFrAEJbAEJiAuRyNHI2GwCUMrIyA8IC4jOLErARQrLbBBLLEIBCVCsAAWsAQlsAQlIC5HI0cjYSCwBCNCsAlDKyCwYFBYILBAUVizAiADIBuzAiYDGllCQiMgR7AEQ7ACYiCwAFBYsEBgWWawAWNgILABKyCKimEgsAJDYGQjsANDYWRQWLACQ2EbsANDYFmwAyWwAmIgsABQWLBAYFlmsAFjYbACJUZhOCMgPCM4GyEgIEYjR7ABKyNhOCFZsSsBFCstsEIssDUrLrErARQrLbBDLLA2KyEjICA8sAQjQiM4sSsBFCuwBEMusCsrLbBELLAAFSBHsAAjQrIAAQEVFBMusDEqLbBFLLAAFSBHsAAjQrIAAQEVFBMusDEqLbBGLLEAARQTsDIqLbBHLLA0Ki2wSCywABZFIyAuIEaKI2E4sSsBFCstsEkssAgjQrBIKy2wSiyyAABBKy2wSyyyAAFBKy2wTCyyAQBBKy2wTSyyAQFBKy2wTiyyAABCKy2wTyyyAAFCKy2wUCyyAQBCKy2wUSyyAQFCKy2wUiyyAAA+Ky2wUyyyAAE+Ky2wVCyyAQA+Ky2wVSyyAQE+Ky2wViyyAABAKy2wVyyyAAFAKy2wWCyyAQBAKy2wWSyyAQFAKy2wWiyyAABDKy2wWyyyAAFDKy2wXCyyAQBDKy2wXSyyAQFDKy2wXiyyAAA/Ky2wXyyyAAE/Ky2wYCyyAQA/Ky2wYSyyAQE/Ky2wYiywNysusSsBFCstsGMssDcrsDsrLbBkLLA3K7A8Ky2wZSywABawNyuwPSstsGYssDgrLrErARQrLbBnLLA4K7A7Ky2waCywOCuwPCstsGkssDgrsD0rLbBqLLA5Ky6xKwEUKy2wayywOSuwOystsGwssDkrsDwrLbBtLLA5K7A9Ky2wbiywOisusSsBFCstsG8ssDorsDsrLbBwLLA6K7A8Ky2wcSywOiuwPSstsHIsswkEAgNFWCEbIyFZQiuwCGWwAyRQeLABFTAtAEu4AMhSWLEBAY5ZsAG5CAAIAGNwsQAFQrIAAQAqsQAFQrMKAgEIKrEABUKzDgABCCqxAAZCugLAAAEACSqxAAdCugBAAAEACSqxAwBEsSQBiFFYsECIWLEDZESxJgGIUVi6CIAAAQRAiGNUWLEDAERZWVlZswwCAQwquAH/hbAEjbECAEQAAA==') format('truetype');
-        }
-        /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-        /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-        /*
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-          @font-face {
-            font-family: 'fontello';
-            src: url('../font/fontello.svg?28392597#fontello') format('svg');
-          }
-        }
-        */
-
-         [class^="icon-"]:before, [class*=" icon-"]:before {
-          font-family: "fontello";
-          font-style: normal;
-          font-weight: normal;
-          speak: none;
-
-          display: inline-block;
-          text-decoration: inherit;
-          width: 1em;
-          margin-right: .2em;
-          text-align: center;
-          /* opacity: .8; */
-
-          /* For safety - reset parent styles, that can break glyph codes*/
-          font-variant: normal;
-          text-transform: none;
-
-          /* fix buttons height, for twitter bootstrap */
-          line-height: 1em;
-
-          /* Animation center compensation - margins should be symmetric */
-          /* remove if not needed */
-          margin-left: .2em;
-
-          /* you can be more comfortable with increased icons size */
-          /* font-size: 120%; */
-
-          /* Uncomment for 3D effect */
-          /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-        }
-        .icon-fbm:before { content: '\e803'; } /* '' */
-
-
-        .center {
-                margin: auto;
-                text-align: center;
-                }
-        .global {
-            /*border: solid 10px lightgray;*/
-            border-radius: 25px;
-            font-family: 'Open Sans', sans-serif;
-            background-color: white;
-            top: 20px;
-            padding-bottom: 20px;
-            right: 20px;
-            left: 20px;
-            align-self: center;
-            margin: 12px;
-        }
-
-        h3 {
-            font-weight: 300;
-        }
-
-        p {
-            font-weight: 300;
-        }
-
-        body {
-            margin: 0px;
-            background-color: white;
-        }
-        .resume i {
-            margin-left: 10px;
-            margin-right: 10px;
-            font-size: 14px;
-        }
-
-        h1 {
-            font-weight: 300;
-            line-height: 1.2;
-            }
-
-        .resume {
-            /*padding-left: 20px;*/
-        }
-        .resume p {
-            padding-left: 40px;
-            line-height: 125%;
-            padding-right: 20px;
-        }
-        .resume h1 {
-            line-height: 120%;
-            padding-top: 15 px;
-        }
-        .resume h3 {
-            padding-left: 30px;
-        }
-        .resume ul{
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        .header-image {
-            text-align: center;
-           /*margin-left: auto;*/
-            /*margin-right: auto; */
-        }
-        .header-image img{
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            /*border: solid 7px lightgrey;
-            background-position: center;*/
-
-
-        }
-        /*.header-image img:hover {
-            border: solid 7px darkgrey;
-        }*/
-
-        .hero {
-            text-align: center;
-            line-height: 5px;
-        }
-        .hero h3 {
-            line-height: 22px;
-        }
-        .hero a {
-            color: black;
-        }
-        .hero h1 {
-            font-weight: 400;
-        }
-
-        .btn {
-            /*display: inline-block;*/
-            text-align: center;
-            width: 175px;
-            height: auto;
-            margin: 0 auto;
-            background-color: lightgray;
-            border-radius: 15px;
-            /*padding-top: 5px;*/
-            /*padding-right: 5px;*/
-            /*padding-left: 5px;*/
-            /*padding-bottom: 5px;*/
-            border-style: solid;
-            border-color: silver;
-        }
-        .btn:hover {
-            /*display: inline-block;*/
-            text-align: center;
-            width: 175px;
-            height: auto;
-            margin: 0 auto;
-            background-color: lightgray;
-            border-radius: 15px;
-            /*padding-top: 5px;*/
-            /*padding-right: 5px;*/
-            /*padding-left: 5px;*/
-            /*padding-bottom: 5px;*/
-            border-style: solid;
-            border-color: black;
-        }
-        .btn a{
-            color: black;
-            border-radius: 10px;
-            /*padding-top: 5px;*/
-            padding-right: 5px;
-            padding-left: 5px;
-            /*padding-bottom: 5px;*/
-            background-color: inherit;
-            text-decoration: none;
-        }
-
-        .creative-commons {
-            text-align: center;
-            text-decoration:none;
-        }
-        .creative-commons a {
-            color: lightgrey;
-            text-decoration:none;
-        }
-        .creative-commons a:hover {
-            color: darkgrey;
-            text-decoration:none;
-
-        }
-
-
-        .lower-buttons {
-            text-align: center;
-            text-decoration:none;
-            padding-top: 100px;
-        }
-        .lower-buttons a {
-            color: lightgray;
-            text-decoration:none;
-        }
-        .lower-buttons a:hover {
-            color: darkgrey;
-            text-decoration:none;
-
-        }
-        .xl-btn {
-            font-size: x-large;
-        }
-        </style>
-        <!-- <link href="./Open_Sans/fontello-4d5fb862/css/fontello-embedded.css" rel="stylesheet"/> -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="master.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="fontello-embedded.css">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <link href="fontello-embedded.css" rel="stylesheet"/>
         <link rel="canonical" href="https://trtmn.com/" />
-        <!--FavIcon Info Starts-->
-        <link rel="apple-touch-icon-precomposed" sizes="500x500" href="gravatar.png" />
-        <!--<link rel="apple-touch-icon-precomposed" sizes="180x180" href="./favicon/apple-touch-icon.png">-->
+    <!--FavIcon Info Starts-->
+        <link rel="apple-touch-icon-precomposed" sizes="500x500" href="https://s.gravatar.com/avatar/99b2ac4667f94cb56b11257b2e4a6d11.png?s=500" />
+    <!--<link rel="apple-touch-icon-precomposed" sizes="180x180" href="./favicon/apple-touch-icon.png">-->
         <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="./favicon/manifest.json">
@@ -235,135 +21,130 @@
         <link rel="shortcut icon" href="./favicon/favicon.ico">
         <meta name="msapplication-config" content="./favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        <!--FavIcon Info Ends-->
+    <!--FavIcon Info Ends-->
 
-        <title>Matt Troutman</title>
-        <!--OG Info-->
+    <!--OG Info-->
         <meta property="og:title" content="Matt Troutman" />
         <meta property="og:site_name" content="TRTMN" />
-        <meta property="og:url" content="https://trtmn.com/"/>
+        <meta property="og:url" content="https://trtmn.com"/>
         <meta property="og:description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 10 years, Matt is passionate about introducing new technologies to people." />
-        <meta property="og:image" content="http://trtmn.com/twitter_casual.png" />
-        <!--Standard Metadata-->
-        <meta name="keywords" content="Quality Assurance, quality, SurveyMonkey, technophile, musician, Matt Troutman, trtmn, Truett Troutman, Mid-America Nazarene Univerity, Sarah Troutman, Music, Django, GeniusLounge, Apple, Genius, GeniusBar, Genius Bar, Webmaster, San Jose, California, San Francisco, Marin, Palo Alto, San Mateo, Mateo, Matias, Kirksville MO, Ethel MO, Fishy, Topeka KS, Olathe, Gardner KS, Gardner, technology" />
+        <meta property="og:image" content="https://trtmn.com/twitter_card_casual.png" />
+    <!--Standard Metadata-->
+        <meta name="keywords" content="Quality Assurance, quality, SurveyMonkey, technophile, musician, Matt Troutman, trtmn, Truett Troutman, Mid-America Nazarene Univerity, Sarah Troutman, Music, Django, GeniusLounge, Apple, Genius, GeniusBar, Genius Bar, Webmaster, San Jose, California, San Francisco, Marin, Palo Alto, San Mateo, Mateo, Matias, Kirksville MO, Ethel MO, Fishy, Topeka KS, Olathe, Gardner KS, Gardner, technology, Lawyer, Injury Lawyer, Attorney" />
         <meta name="author" content="Matt Troutman" />
         <meta name="description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 10 years, Matt is passionate about introducing new technologies to people." />
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <!--Twitter Card Info-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Twitter Card Info-->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@trtmn" />
         <meta name="twitter:creator" content="@trtmn" />
         <meta name="twitter:title" content="Matt Troutman" />
         <meta name="twitter:description" content="Matt Troutman is a Husband, Dad, and a technophile. In the tech industry for over 10 years, Matt is passionate about introducing new technologies to people." />
-        <meta name="twitter:image" content="http://trtmn.com/twitter_casual.png" />
+        <meta name="twitter:image" content="https://trtmn.com/twitter_card_casual.png" />
+    <!-- schema.org stuff -->
         <script type="application/ld+json">
-        {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "givenName": "Matt",
-        "familyName": "Troutman",
-        "name": "Matt Troutman",
-        "image": "http://trtmn.com/gravatar.png",
-        "jobTitle": "Quality Assurance Engineer",
-        "url": "http://trtmn.com"
-        }
+            {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "givenName": "Matt",
+            "familyName": "Troutman",
+            "name": "Matt Troutman",
+            "image": "https://s.gravatar.com/avatar/99b2ac4667f94cb56b11257b2e4a6d11.png?s=500",
+            "jobTitle": "Quality Assurance Engineer",
+            "url": "https://trtmn.com"
+            }
         </script>
-    </head>
-    <body>
-      <amp-analytics type="googleanalytics">
-      <script type="application/json">
-      {
-        "vars": {
-          "account": "UA-91360155-1"
-        },
-        "triggers": {
-          "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
-          }
-        }
-      }
-      </script>
-      </amp-analytics>
-            <div class="global">
-                <br>
-                <!--Headshot-->
-                <div class="header-image">
-                        <amp-img src="https://s.gravatar.com/avatar/99b2ac4667f94cb56b11257b2e4a6d11.png?s=400" height="200" width="200">
-                </div>
-                <div class="hero">
-                    <h1>Matt Troutman</h1>
-                    <!-- Tagline-->
-                    <h3>Husband. Dad. Nerd.</h3>
-                </div>
-                <div class="creative-commons">
-                    <!-- Twitter-->
-                    <a href="https://twitter.com/trtmn" target="_blank" title="Connect with Matt on Twitter">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <!-- Facebook-->
-                    <a href="https://facebook.com/m.trtmn" target="_blank" title="Connect with Matt on Facebook">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <!-- LinkedIn-->
-                    <a href="https://www.linkedin.com/" target="_blank" title="Connect with Matt on LinkedIn">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x"></i>
-                        </span>
-                    </a>
+    <title>Matt Troutman</title>
 
-                    <br>
-                    <!-- Snapchat-->
-                    <a href="https://www.snapchat.com/add/trtmn1" target="_blank" title="Send Matt a snap!">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <!-- Instagram-->
-                    <a href="https://instagram.com/trtmn" target="_blank" title="Matt's Instagram photos">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-instagram fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <!-- WhatsApp-->
-                    <a href="https://chat.whatsapp.com/Egmx0S3FTVqIZpwWRNcL2F" target="_blank" title="Connect with Matt on WhatsApp">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle-thin fa-stack-2x"></i>
-                            <i class="fa fa-whatsapp fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <!--Messenger-->
-                    <a href="https://m.me/m.trtmn" target="_blank" title="Connect with Matt on Messenger">
-                       <span class="fa-stack fa-2x">
-                           <i class="fa fa-circle-thin fa-stack-2x"></i>
-                           <i class="icon-fbm"></i>
-                       </span>
-                    </a>
+  </head>
+  <body>
 
-                </div>
-                <div class="resume" id="footer">
-                <br><br><br><br><br><br><br>
-                <!--Creative Commons link -->
-                <!--Based on Resume by Matt Troutman is licensed under a Creative Commons Attribution 4.0 International License. -->
-                <!--<div class="creative-commons">-->
-                    <!--<div class="xl-btn"-->
-                    <!--<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" title="Creative Commons 4.0"><i class="fa fa-creative-commons"></i></a>-->
-                    <!--<a href="https://github.com/trtmn/trtmn.github.io" target="_blank" title="Fork this project on GitHub"><i class="fa fa-code-fork"></i></a>-->
-                    <!--<a href="https://github.com/trtmn/trtmn.github.io/issues/new" target="_blank" title="Report a bug on GitHub"><i class="fa fa-bug"></i></a>-->
-                    <!--</div>-->
-                <!--</div>-->
+      <!-- Alert -->
+      <!-- This is hidden by the CSS in the alert class -->
+      <div class="alert alert-success" role="alert">
+        <h5></h5>
+      </div>
 
-                <!--</div>-->
 
-            </div>
-    </body>
+      <!-- Header Image -->
+      <img id="gravatar" src="https://s.gravatar.com/avatar/99b2ac4667f94cb56b11257b2e4a6d11.png?s=400" alt="Matt Troutman" class="img-responsive center-block img-circle">
+      <h1>Matt Troutman</h1>
+      <h3 id="tagline">Husband. Dad. Nerd.</h3>
+      <!-- End Header Image -->
+
+        <!-- Social Links Begin -->
+<h4 class="social-icons">
+        <!-- Begin Facebook -->
+        <a href="https://facebook.com/m.trtmn" target="_blank" title="Connect with Matt on Facebook">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        <!-- End Facebook -->
+
+        <!-- Begin Instagram -->
+         <a href="https://instagram.com/trtmn" target="_blank" title="Matt's Instagram photos">
+             <span class="fa-stack fa-2x">
+                 <i class="fa fa-circle-thin fa-stack-2x"></i>
+                 <i class="fa fa-instagram fa-stack-1x"></i>
+             </span>
+         </a>
+         <!-- End Instagram -->
+
+        <!-- Begin Twitter -->
+        <a href="https://twitter.com/trtmn" target="_blank" title="Connect with Matt on Twitter">
+              <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x"></i>
+              </span>
+          </a>
+          <!-- End Twitter -->
+</h4>
+    <!-- Social Break -->
+    <!-- Social Break -->
+<h4 class="social-icons">
+      <!-- Begin WhatsApp -->
+          <a href="https://chat.whatsapp.com/Egmx0S3FTVqIZpwWRNcL2F" target="_blank" title="Connect with Matt on WhatsApp">
+              <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-whatsapp fa-stack-1x"></i>
+              </span>
+          </a>
+        <!-- End Whatsapp -->
+
+        <!-- Begin Messenger -->
+          <a href="https://m.me/m.trtmn" target="_blank" title="Connect with Matt on Messenger">
+             <span class="fa-stack fa-2x">
+                 <i class="fa fa-circle-thin fa-stack-2x"></i>
+                 <i class="icon-fbm"></i>
+             </span>
+          </a>
+          <!-- End Messenger -->
+
+          <!-- Begin Snapchat -->
+          <a href="https://www.snapchat.com/add/trtmn1" target="_blank" title="Send Matt a snap!">
+             <span class="fa-stack fa-2x">
+                 <i class="fa fa-circle-thin fa-stack-2x"></i>
+                 <i class="fa fa-snapchat-ghost fa-stack-1x"></i>
+             </span>
+         </a>
+         <!-- End Snapchat -->
+
+         <!-- Begin Linkedin -->
+         <a href="https://www.linkedin.com/" target="_blank" title="Connect with Matt on LinkedIn">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        <!-- End Linkedin -->
+</h4>
+      <footer class="footer">
+        <a class="footerlink" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" title="Creative Commons 4.0"><i class="fa fa-2x fa-creative-commons"></i></a>
+        <a class="footerlink" href="https://github.com/trtmn/trtmn.github.io" target="_blank" title="Fork this project on GitHub"><i class="fa fa-2x fa-code-fork"></i></a>
+        <a class="footerlink" href="https://github.com/trtmn/trtmn.github.io/issues/new" target="_blank" title="Report a bug on GitHub"><i class="fa fa-2x fa-bug"></i></a>
+
+      </footer>
+  </body>
 </html>
