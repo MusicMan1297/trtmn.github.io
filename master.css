@@ -29,10 +29,7 @@ a:focus{
   margin-bottom: 35px;
 }
 
-.alert {
-  /*Comment out the line below to enable the alert class*/
-  display: none;
-}
+
 .footer {
     margin-top: 120px;
     width: 100%;
