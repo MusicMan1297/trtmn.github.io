@@ -8,7 +8,7 @@
 
 <url>
   <loc>https://trtmn.com/</loc>
-  <lastmod>2017-05-17T18:19:39+00:00</lastmod>
+  <lastmod>2017-06-20T18:19:39+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
@@ -19,6 +19,21 @@
 <url>
 <loc>https://s.trtmn.com/</loc>
 <lastmod>2017-05-17T18:19:39+00:00</lastmod>
+<changefreq>daily</changefreq>
+</url>
+<url>
+<loc>https://trtmn.com/thing/kc/</loc>
+<lastmod>2017-06-17T18:19:39+00:00</lastmod>
+<changefreq>daily</changefreq>
+</url>
+<url>
+<loc>https://trtmn.com/thing/regex/</loc>
+<lastmod>2017-06-17T18:19:39+00:00</lastmod>
+<changefreq>daily</changefreq>
+</url>
+<url>
+<loc>https://trtmn.com/thing/lobster/</loc>
+<lastmod>2017-06-17T18:19:39+00:00</lastmod>
 <changefreq>daily</changefreq>
 </url>
 </urlset>
